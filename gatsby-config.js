@@ -9,6 +9,5 @@ module.exports = {
       "name": "images",
       "path": "./src/images/"
     },
-    __key: "images"
   }]
 };
