@@ -5,10 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const HomePage = () => {
   return (
-    <>
-    <html className={html}>
+    <body>
       <Layout pageTitle="Homepage"></Layout>
-      <body className={body}>
       <div className={container}>
         <h1 className={heading1}>What We Do</h1>
         <body>
@@ -25,9 +23,7 @@ const HomePage = () => {
           </ul>
         </body>
       </div>
-      </body>
-      </html>
-    </>
+    </body>
   );
 }
 
