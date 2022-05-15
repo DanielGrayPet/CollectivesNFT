@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import { container, heading1, body1, heading2, picturelist, picturedo, html, body } from "../components/index.module.css"
+import { Link } from 'gatsby'
+import { container, heading1, body1, picturedo, span2, icons, navLinks} from "../components/index.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
 const HomePage = () => {
@@ -8,20 +9,17 @@ const HomePage = () => {
     <body>
       <Layout pageTitle="Homepage"></Layout>
       <div className={container}>
-        <h1 className={heading1}>What We Do</h1>
-        <body>
-          <p className={body1}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis mi ac tellus rhoncus, sit amet efficitur lorem viverra. Nam augue justo, posuere eu mi ut, aliquam auctor enim. Praesent nisi tortor, facilisis vestibulum massa eu, lobortis cursus metus. Ut iaculis pulvinar rhoncus. Praesent consectetur felis a orci aliquet, faucibus eleifend enim rhoncus. Curabitur vitae tellus eu ligula auctor facilisis. Nulla venenatis vehicula tortor, sed hendrerit enim maximus sed. Sed id malesuada odio, dapibus finibus ligula. Fusce rhoncus, eros sit amet feugiat maximus, dui nisi commodo eros, eu ultricies leo nulla eget metus. Nunc vel nisl at diam dapibus ultrices et nec sem. Nulla facilisi.</p>
-        </body>
-      </div>
-      <div className={container}>
-        <h2 className={heading2}>Sneak Peek</h2>
-        <body>
-          <ul className={picturelist}>
-            <li className={picturedo}><StaticImage src= "../images/image4.jpg" alt="silly" placeholder="blurred"></StaticImage></li>
-            <li className={picturedo}><StaticImage src= "../images/image6.jpg" alt="silly" placeholder="blurred"></StaticImage></li>
-            <li className={picturedo}><StaticImage src= "../images/image5.jpg" alt="silly" placeholder="blurred"></StaticImage></li>
+        <article className={span2}><h1 className={heading1}>What We Do</h1><body className={body1}><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum nec eros nec malesuada. Ut convallis facilisis nulla eget pharetra. Duis finibus mi eu dui bibendum, id ultrices ante elementum. Mauris viverra erat et dui fringilla, id posuere nisl venenatis. Ut venenatis vulputate molestie. Morbi gravida quis ipsum nec mattis. Donec vel ligula congue, commodo leo et, sodales ante. Nam nec porttitor urna. Aliquam eget lorem ut tortor consectetur laoreet at vel diam. Praesent ligula lorem, vestibulum elementum massa nec, rhoncus tristique mi. Donec dignissim elit fringilla nibh placerat consequat et fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum malesuada nibh ut augue consequat fermentum. Fusce ullamcorper dolor nec accumsan aliquam. Sed in dictum mauris.</strong></body></article>
+        <article className={picturedo}><StaticImage src="../images/image5.jpg"></StaticImage></article>
+        <article className={picturedo}><StaticImage src="../images/image4.jpg"></StaticImage></article>
+        <article className={span2}>
+          <h1 className={heading1}>Find us at</h1>
+          <ul className={navLinks}>
+            <li><Link to="https://www.instagram.com/collectives_bw_nfts/"><StaticImage src="../images/icon-inst.jpg" alt="instagram icon" className={icons}></StaticImage></Link></li>
+            <li><Link to="https://twitter.com/Collectives_BW"><StaticImage src="../images/icon-twtr.jpg" alt="twitter icon" className={icons}></StaticImage></Link></li>
+            <li><Link to="https://www.instagram.com/collectives_bw_nfts/"><StaticImage src="../images/icon-ops.jpg" alt="opensea icon" className={icons}></StaticImage></Link></li>
           </ul>
-        </body>
+        </article>
       </div>
     </body>
   );
