@@ -1,4 +1,16 @@
 html {
-  background: peachpuff;
+  background: #19004D;
+  background: -moz-linear-gradient(45deg, #19004D 0%, #7F0099 57%, #CC0066 100%);
+  background: -webkit-linear-gradient(45deg, #19004D 0%, #7F0099 57%, #CC0066 100%);
+  background: linear-gradient(45deg, #19004D 0%, #7F0099 57%, #CC0066 100%);
+  padding: 0;
+  margin: 0;
   }
+body{
+  padding: 0;
+  margin: 0;
+}
+ul{
+  margin: 0;
+}
   

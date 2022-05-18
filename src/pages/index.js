@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"
 import { Link } from 'gatsby'
-import { container, heading1, body1, picturedo, span2, icons, navLinks, nogridcont} from "../components/index.module.css"
+import { container, heading1, body1, picturedo, span2, icons, navLinks, wave, shapefill} from "../components/index.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
 const HomePage = () => {
@@ -16,15 +16,15 @@ const HomePage = () => {
         <article className={span2}>
           <h1 className={heading1}>Find us at</h1>
           <ul className={navLinks}>
-            <li><Link to="https://www.instagram.com/collectives_bw_nfts/"><StaticImage src="../images/icon-inst.jpg" alt="instagram icon" className={icons}></StaticImage></Link></li>
-            <li><Link to="https://twitter.com/Collectives_BW"><StaticImage src="../images/icon-twtr.jpg" alt="twitter icon" className={icons}></StaticImage></Link></li>
-            <li><Link to="https://opensea.io/0xbBE0cB8E08E123A1e64210Ebc8257605B9e46387"><StaticImage src="../images/icon-ops.jpg" alt="opensea icon" className={icons}></StaticImage></Link></li>
+            <li><Link to="https://www.instagram.com/collectives_bw_nfts/"><StaticImage src="../images/icon-inst.png" alt="instagram icon" className={icons}></StaticImage></Link></li>
+            <li><Link to="https://twitter.com/Collectives_BW"><StaticImage src="../images/icon-twtr.png" alt="twitter icon" className={icons}></StaticImage></Link></li>
+            <li><Link to="https://opensea.io/0xbBE0cB8E08E123A1e64210Ebc8257605B9e46387"><StaticImage src="../images/icon-ops.png" alt="opensea icon" className={icons}></StaticImage></Link></li>
           </ul>
         </article>
       </div>
-      <div className={nogridcont}>
+      <div>
         <h1 className={heading1}>What's New</h1>
-        <body className={body1}><strong>PLACEHOLDER FOR NOW,<br></br> CHECK AGAIN AFTER COLLECTION LAUNCH</strong></body>
+        <body className={body1}>PLACEHOLDER FOR NOW,<br></br> CHECK AGAIN AFTER COLLECTION LAUNCH</body>
       </div>
       <Footer></Footer>
     </body>

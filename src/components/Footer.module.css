@@ -1,9 +1,32 @@
 .container{
-    background-color: black;
+    background-color: #8D0090;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    margin-top:auto; 
 }
 .body{
     text-align: center;
     justify-content: center;
     color: white;
     font-size: 48px;
+}
+.wave {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 105px;
+}
+
+.wave .shapefill {
+    fill: #8D0090;
 }
