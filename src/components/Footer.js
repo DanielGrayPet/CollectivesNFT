@@ -1,5 +1,6 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
-import {container, body, wave, shapefill} from './Footer.module.css'
+import {container, body, wave, shapefill, gicon, body1} from './Footer.module.css'
 
 const Footer = () => {
     return (
@@ -12,7 +13,8 @@ const Footer = () => {
                 </svg>
             </div>
             <footer className={container}>
-                <body className={body}>Powered By <strong>Gatsby</strong><br></br>Created By <strong>Daniel Gray</strong></body>
+                <body className={body}>Powered By <strong>Gatsby</strong><StaticImage src="../images/icon.png" alt="Gatsby Icon" className={gicon}></StaticImage><br></br>Developed By <strong>Daniel Gray</strong></body>
+                <body className={body1}>Contact us at: <br></br><strong>Collectives.bw@gmail.com</strong></body>
             </footer>
         </body>
     )

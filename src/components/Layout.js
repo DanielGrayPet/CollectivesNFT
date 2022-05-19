@@ -8,8 +8,8 @@ const Layout = ({pageTitle}) => {
     <body>
         <div className={container}>
             <title>{pageTitle}</title>
-            <h1 className={heading}><StaticImage src="../images/icon.png" alt="Collectives NFT logo" className={logo}></StaticImage>Collectives</h1>
-            <body className={body1}>Lorem ipsum dolor sit amet</body>
+            <h1 className={heading}><StaticImage src="../images/placeholder-round.png" alt="Collectives NFT logo" loading="eager" placeholder="blurred" className={logo}></StaticImage>Collectives</h1>
+            <body className={body1}>Hand drawn art, digitized.</body>
             <nav>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link></li>

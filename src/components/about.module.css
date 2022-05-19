@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
 .container{
     display: grid;
     gap: 1.5rem;
@@ -7,36 +10,44 @@
     grid-column: span 3;
     border-radius: 25px;
 }
-.heading1{
+.headingmain{
     text-align: center;
-    font-family: Georgia, serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 48px;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
     word-spacing: 2px;
-    color: #555;
-    font-weight: 700;
+    color: #95F5F5;
+    font-weight: 600;
     font-style: normal;
     font-variant: normal;
     text-transform: uppercase;
 }
-.circle {
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    background: #000
+.mainwrap {
+    margin-left: 20px;
 }
 .abouthead{
-    width: fit-content;
-    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #02030A;
+}
+.subhead{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #02030A;
 }
 .aboutbody{
+    font-family: 'Zilla Slab', serif;
+    color: whitesmoke;
     padding-top: 0px;
+    font-size: 24px;
+    line-height: 30px;
 }
 .imgcirc{
+    margin-left: 20px;
     max-width: 128px;
     max-height: 128px;
-    border-radius: 50%;
 }
