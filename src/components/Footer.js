@@ -1,10 +1,9 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
-import {container, body, wave, shapefill, gicon, body1} from './Footer.module.css'
+import {container, cred, wave, shapefill, cont} from './Footer.module.css'
 
 const Footer = () => {
     return (
-        <body>
+        <div>
             <div class={wave}>
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className={shapefill}></path>
@@ -13,10 +12,10 @@ const Footer = () => {
                 </svg>
             </div>
             <footer className={container}>
-                <body className={body}>Powered By <strong>Gatsby</strong><StaticImage src="../images/icon.png" alt="Gatsby Icon" className={gicon}></StaticImage><br></br>Developed By <strong>Daniel Gray</strong></body>
-                <body className={body1}>Contact us at: <br></br><strong>Collectives.bw@gmail.com</strong></body>
+                <p className={cred}>Powered By <strong>Gatsby</strong><br></br>Developed By <strong>Daniel Gray</strong></p>
+                <p className={cont}>Contact us at: <br></br><strong>Collectives.bw@gmail.com</strong></p>
             </footer>
-        </body>
+        </div>
     )
 }
 

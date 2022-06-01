@@ -1,15 +1,20 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { container, heading, navLinks, navLinkItem, navLinkText, logo, body1, wave, shapefill } from './Layout.module.css'
+import { container, heading, navLinks, navLinkItem, navLinkText, logo, quote, wave, shapefill } from './Layout.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
+import { Helmet } from 'react-helmet'
 
 const Layout = ({pageTitle}) => {
     return (
-    <body>
+    <div>
+        <Helmet>
+            <meta charSet="utf-8"/>
+            <title>Collectives | {pageTitle}</title>
+        </Helmet>
         <div className={container}>
             <title>{pageTitle}</title>
             <h1 className={heading}><StaticImage src="../images/placeholder-round.png" alt="Collectives NFT logo" loading="eager" placeholder="blurred" className={logo}></StaticImage>Collectives</h1>
-            <body className={body1}>Hand drawn art, digitized.</body>
+            <p className={quote}>Hand drawn art, digitized.</p>
             <nav>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link></li>
@@ -25,7 +30,7 @@ const Layout = ({pageTitle}) => {
           <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className={shapefill}></path>
         </svg>
         </div>
-    </body>
+    </div>
     )
 }
 

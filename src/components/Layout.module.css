@@ -19,15 +19,15 @@
     margin-bottom: .2em;
     padding-top: .3em;
   }
-  .body1{
+  .quote{
     font-family: 'Anonymous Pro', monospace;
     color: #02030A;
     text-align: center;
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: 700;
-    padding-bottom: .2em;
-    padding-top: .2em;
+    font-style: italic;
+    margin: 0;
   }
   .logo{
     height: 48px;
