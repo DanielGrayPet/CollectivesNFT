@@ -1,19 +1,18 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { container, heading, navLinks, navLinkItem, navLinkText, logo, quote, wave, shapefill } from './Layout.module.css'
-import { StaticImage } from 'gatsby-plugin-image'
+import { container, heading, navLinks, navLinkItem, navLinkText, quote, wave, shapefill } from './Layout.module.css'
 import { Helmet } from 'react-helmet'
 
 const Layout = ({pageTitle}) => {
     return (
     <div>
         <Helmet>
-            <meta charSet="utf-8"/>
-            <title>Collectives | {pageTitle}</title>
+            <meta charSet="utf-8" lang="eng"/>
+            <title>{pageTitle} | Collectives</title>
         </Helmet>
         <div className={container}>
             <title>{pageTitle}</title>
-            <h1 className={heading}><StaticImage src="../images/placeholder-round.png" alt="Collectives NFT logo" loading="eager" placeholder="blurred" className={logo}></StaticImage>Collectives</h1>
+            <h1 className={heading}>Collectives</h1>
             <p className={quote}>Hand drawn art, digitized.</p>
             <nav>
                 <ul className={navLinks}>

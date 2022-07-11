@@ -2,13 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
 
 .container{
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-}
-.titlearticle{
-    grid-column: span 3;
-    border-radius: 25px;
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
 }
 .headingmain{
     text-align: center;
@@ -23,15 +19,25 @@
     text-transform: uppercase;
 }
 .mainwrap {
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: .5rem;
+    background: #19004D;
+    background: -moz-linear-gradient(45deg,  #CC0066 0%, #7F0099 57%,  #19004D 100%);
+    background: -webkit-linear-gradient(45deg,  #CC0066 0%, #7F0099 57%,  #19004D 100%);
+    background: linear-gradient(45deg,  #CC0066 0%, #7F0099 57%,  #19004D 100%);
+    border: 4px solid #19004D;
+    border-radius: 5%;
+    transition: all 300ms ease;
 }
 .abouthead{
     font-family: 'Poppins', sans-serif;
-    font-size: 48px;
-    text-align: justify;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    font-size: 64px;
+    text-align: center;
     color: #02030A;
+    margin: 1rem;
 }
 .subhead{
     font-family: 'Poppins', sans-serif;
@@ -45,9 +51,23 @@
     padding-top: 0px;
     font-size: 24px;
     line-height: 30px;
+    margin: 1rem;
 }
 .imgcirc{
-    margin-left: 20px;
+    margin: 20px;
     max-width: 128px;
     max-height: 128px;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 992px){
+    .container{
+        display: block;
+        margin: 2% 5% 2% 5%;
+    }
+    .aboutbody{
+        text-align: justify;
+    }
+    .imgcirc{
+        margin: .5rem;
+    }
 }
