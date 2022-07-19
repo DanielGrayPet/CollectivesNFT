@@ -14,6 +14,7 @@ import {
   linkitem,
 } from "../components/index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 const HomePage = () => {
   return (
@@ -21,21 +22,18 @@ const HomePage = () => {
       <Layout pageTitle="Home"></Layout>
       <div className={container}>
         <article>
-          <h1 className={headingtop}>What We Do</h1>
+          <h1 className={headingtop}>The Project</h1>
           <p className={wedop}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vestibulum nec eros nec malesuada. Ut convallis facilisis nulla eget
-            pharetra. Duis finibus mi eu dui bibendum, id ultrices ante
-            elementum. Mauris viverra erat et dui fringilla, id posuere nisl
-            venenatis. Ut venenatis vulputate molestie. Morbi gravida quis ipsum
-            nec mattis. Donec vel ligula congue, commodo leo et, sodales ante.
-            Nam nec porttitor urna. Aliquam eget lorem ut tortor consectetur
-            laoreet at vel diam. Praesent ligula lorem, vestibulum elementum
-            massa nec, rhoncus tristique mi. Donec dignissim elit fringilla nibh
-            placerat consequat et fermentum sem. Class aptent taciti sociosqu ad
-            litora torquent per conubia nostra, per inceptos himenaeos.
-            Vestibulum malesuada nibh ut augue consequat fermentum. Fusce
-            ullamcorper dolor nec accumsan aliquam. Sed in dictum mauris.
+            A passion project that melds the artist's love for the sea and the
+            ocean with the modern world and the digital age, Collectives is more
+            than just a digital image you can purchase. Within every token,
+            there's dedication to the art, a craving for perfection in every
+            brush's stroke. A delicate collaboration of real life art and
+            digital one; the NFT's on display are all hand-drawn by <Link to="/about" style={{textDecoration: "none", color: "whitesmoke",}}><strong>Simon
+            Wasser</strong></Link>, and are then scanned and transformed into digital form while
+            still keeping their unique look which separates this gallery from
+            all others. When you buy an NFT from this gallery, you are handed a
+            piece of art, not just a number and a contract.
           </p>
         </article>
         <article>
@@ -60,7 +58,11 @@ const HomePage = () => {
           <h1 className={heading1}>Find us at</h1>
           <ul className={navLinks}>
             <li className={linkitem}>
-              <a href="https://www.instagram.com/collectives_bw_nfts/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/collectives_bw_nfts/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StaticImage
                   src="../images/icon-inst.png"
                   alt="instagram icon"
@@ -70,7 +72,11 @@ const HomePage = () => {
               </a>
             </li>
             <li className={linkitem}>
-              <a href="https://twitter.com/Collectives_BW" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/Collectives_BW"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StaticImage
                   src="../images/icon-twtr.png"
                   alt="twitter icon"
@@ -80,7 +86,11 @@ const HomePage = () => {
               </a>
             </li>
             <li className={linkitem}>
-              <a href="https://opensea.io/0xbBE0cB8E08E123A1e64210Ebc8257605B9e46387" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://opensea.io/0xbBE0cB8E08E123A1e64210Ebc8257605B9e46387"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StaticImage
                   src="../images/icon-ops.png"
                   alt="opensea icon"

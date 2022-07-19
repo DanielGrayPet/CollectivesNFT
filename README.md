@@ -14,3 +14,7 @@
 * Changed the about page
 * Added google tracker
 * Changed more stuff!
+
+# Version 1.2
+* Finally wrote the descriptions and text!
+* Moved around some stuff and decided what I like most
