@@ -46,15 +46,6 @@ const HomePage = () => {
           </figcaption>
         </article>
         <article>
-          <StaticImage
-            src="../images/placeholder.jpg"
-            className={nftimg}
-          ></StaticImage>
-          <figcaption className={nftcaption}>
-            NFT Number: #11111 Price: $$$$
-          </figcaption>
-        </article>
-        <article>
           <h1 className={heading1}>Find us at</h1>
           <ul className={navLinks}>
             <li className={linkitem}>
@@ -97,6 +88,20 @@ const HomePage = () => {
                   className={icons}
                 ></StaticImage>
                 <h1>OpenSea</h1>
+              </a>
+            </li>
+            <li className={linkitem}>
+              <a
+                href="https://discord.gg/3xV66MqZVV"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <StaticImage
+                  src="../images/icon-discord.png"
+                  alt="discord icon"
+                  className={icons}
+                ></StaticImage>
+                <h1>Discord</h1>
               </a>
             </li>
           </ul>

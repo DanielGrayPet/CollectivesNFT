@@ -69,28 +69,25 @@
     gap: 1rem;
     margin-bottom: 1rem;
     cursor: default;
+    opacity: 0.8;
+    transition: all 300ms ease;
+}
+.cred:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .cred h3{
     font-family: 'Raleway', sans-serif;
     font-size: 64px;
     color: whitesmoke;
     margin: 0;
-    opacity: 0.8;
-    transition: all 300ms ease;
-}
-.cred h3:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-.instsmall:hover{
-    opacity: 1;
-    cursor: pointer;
 }
 .instsmall{
     width: 5rem;
-    opacity: 0.8;
     transition: all 300ms ease;
 }
+
 @media only screen and (max-width: 992px){
     .container{
         display: block;

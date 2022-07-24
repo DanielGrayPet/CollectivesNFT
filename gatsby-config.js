@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Collectives`,
-    siteUrl: `https://https://www.collectivesart.com`
+    siteUrl: `https://www.collectivesart.com`
   },
   plugins: [
     {
@@ -39,7 +39,7 @@ module.exports = {
     },
     resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/faviconplaceholder.png',
+        icon: 'src/images/Logo-D-1-trans-test.png',
     },
   }]
 };
